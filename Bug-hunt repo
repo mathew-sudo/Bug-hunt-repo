@@ -28,3 +28,14 @@ adb push su-armv7 /data/local/tmp/su
 
 adb shell
 su
+
+mount | grep ' /system '
+# Note the device name, e.g., /dev/block/platform/soc/1d84000.ufshc/by-name/system
+
+# Example remount command:
+mount -o remount,rw /system
+
+# If the above fails, try:
+# mount -o rw,remount /system
+# or use the full block device (replace with your actual device):
+# mount -o rw,remount /dev/block/platform/soc/1d84000.ufshc/by-name/system /system
