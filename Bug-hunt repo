@@ -43,3 +43,7 @@ mount -o remount,rw /system
 cp /data/local/tmp/su /system/xbin/su
 chmod 6755 /system/xbin/su
 chown root:root /system/xbin/su
+
+cp /data/local/tmp/su /system/bin/su
+chmod 6755 /system/bin/su
+chown root:root /system/bin/su
