@@ -54,3 +54,4 @@ su
 whoami
 # Should return root if successful
 
+rm /data/local/tmp/su
