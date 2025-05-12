@@ -47,3 +47,5 @@ chown root:root /system/xbin/su
 cp /data/local/tmp/su /system/bin/su
 chmod 6755 /system/bin/su
 chown root:root /system/bin/su
+
+mount -o remount,ro /system
