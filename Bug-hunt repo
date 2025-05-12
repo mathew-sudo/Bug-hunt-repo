@@ -25,3 +25,6 @@ armv7a-linux-androideabi21-clang su.c -o su-armv7
 echo "su binary built at $(pwd)/su-armv7"
 
 adb push su-armv7 /data/local/tmp/su
+
+adb shell
+su
