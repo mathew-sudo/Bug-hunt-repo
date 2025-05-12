@@ -49,3 +49,8 @@ chmod 6755 /system/bin/su
 chown root:root /system/bin/su
 
 mount -o remount,ro /system
+
+su
+whoami
+# Should return root if successful
+
